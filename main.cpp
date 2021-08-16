@@ -4,6 +4,8 @@
 #include <random>//defines random number generation facilities; for more info see http://wwww.cplusplus.com/reference/random/
 #include <ctime>//declares a set of functions, macros and types to work with date and time information e.g. the time() function is used to get the current time
 
+
+
 //include default source files for daily primer challenges
 #include "include/monday.h"
 #include "include/tuesday.h"
@@ -11,9 +13,12 @@
 #include "include/thursday.h"
 #include "include/friday.h"
 
+
+
 //function declarations:
 //tell the compiler about the function; required if function isn't compiled prior to reference
 void menu(void);
+
 
 //this is the 
 int main() {
@@ -26,6 +31,8 @@ int main() {
 * Without this, the menu would be displayed immediately after an option is completed,
 * thereby forcing the user to scroll up to see its resulting output.
 */
+
+
 void prompt(void) {
   std::cout << "\nPress 'Enter' to continue...\n";
   std::cin.get(); //wait for a key press
@@ -105,3 +112,4 @@ void menu(void) {
 
 	std::cout << " - Done\n\n";
 }
+
