@@ -35,7 +35,7 @@ void menu(void) {
   std::string choiceString;
 	int choice = -1; //declare and initialise an integer type variable
 	do { //set up a continuous loop
-		std::cout << "\nAdvanced Programming - Primers Portfolio Menu:\n";
+		std::cout << "\nWelcome To Advanced Programming - Primers Portfolio Menu:\n";
 		std::cout << "Monday (Basic Programming Primers)\n";
 		std::cout << "\t1. Fahrenheit / Centigrade conversion\n";
 		std::cout << "\t2. Self-service checkout\n";
@@ -59,9 +59,14 @@ void menu(void) {
 		std::cout << "\n\t0. Quit\n";
 
 		std::cout << "\nPlease enter option to run primer (e.g. 1 for Fahrenheit / Centigrade conversion 01): ";
-  	getline(std::cin, choiceString);
+  	//getline(std::cin, choiceString);
+    std::cin >> choiceString;
+
+    std::cout << "XXX: " << choiceString;
+
+
     // TODO: validate input string
-    choice = stoi(choiceString);
+    //choice = stoi(choiceString);
 
 		switch(choice) {
       // perform the task for the chosen option, then ask the user to press 'Enter' before 
